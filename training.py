@@ -12,10 +12,10 @@ print('Face Detected: ',faces_detected)
 
 #Training will begin from here
 
-faces,faceID = fr.labels_for_training_data("D:\Python\Projects\Face Recognition\Images")
+faces,faceID = fr.labels_for_training_data("D:\Python\Projects\Face Recognition\Image")
 face_recogniser = fr.train_Classifier(faces,faceID)
 face_recogniser.save('D:/Python/Projects/Face Recognition/TrainingData.yml') # To save the trained model. Just give the path.
-
+# Assign labels to images folder
 name={0:"Rhythem Jain",1:"Mark Zuckerberg", 2: "Hrithik Roshan", 3:"Deepika Padukone", 4: "Emma Watson"}
 
 for face in faces_detected:
